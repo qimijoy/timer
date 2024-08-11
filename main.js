@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
 class Timer {
 	constructor({ selector }) {
 		this.date = new Date();
-		this.setZero();
 
 		this.intervalValue = 5; // ms
 
@@ -94,7 +93,6 @@ class Timer {
 	reset() {
 		clearInterval(this.timer);
 		this.timer = null;
-		this.setZero();
 		this.resetTime();
 
 		this.button_start.disabled = false;
